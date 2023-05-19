@@ -41,5 +41,7 @@ app.listen(PORT, () => {
 });
 
 app.get("/", (req, res) =>{
+  res.header('Access-Control-Allow-Origin', '*');
+
     res.send("Test Api is working fine");
 })
